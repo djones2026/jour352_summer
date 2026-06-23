@@ -1,0 +1,119 @@
+#content {
+    margin: 0 auto;
+    width: 900px;
+}
+/* Masthead container */
+.masthead {
+    background-color: #0B1F3A; /* deep navy = trust/professionalism */
+    color: rgb(128, 203, 235);
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* Small category label */
+.kicker {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #7caae3; /* green = sustainability/energy */
+    margin-bottom: 20px;
+}
+
+.masthead h3 {
+    color: #A5D6A7;
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.masthead p {
+    color: #E0E0E0;
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.masthead {
+    height: 400px;
+    background: linear-gradient(135deg, #0b1f3a, #1b5e20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.masthead-content {
+    max-width: 900px;
+}
+
+.masthead h2 {
+    color: #A5D6A7;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.masthead h1 {
+    color: white;
+    font-size: 64px;
+    margin: 0;
+    line-height: 1.1;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.masthead h3 {
+    color: #A5D6A7;
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 20px;
+    font-weight: normal;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.masthead p {
+    color: #E0E0E0;
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+
+.pull-quote blockquote {
+    font-size: 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    color: #0b1f3a;
+    margin: 0;
+    line-height: 1.5;
+}
+
