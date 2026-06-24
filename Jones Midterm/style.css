@@ -1,0 +1,118 @@
+/* PAGE WRAPPER (centers content) */
+#page-wrapper {
+    width: 850px;
+    margin: auto;
+    padding: 25px;
+}
+/*Page background*/
+body {
+    background: linear-gradient(to bottom, #f8f4ed, #e6efe8);
+}
+/* Main story text styling */
+p {
+    font-family: Georgia, "Times New Roman", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+/* MASTHEAD / BANNER */
+/* ===== MASTHEAD DESIGN ===== */
+
+#masthead {
+    background: linear-gradient(135deg, #111, #2b2b2b);
+    color: rgb(126, 228, 122);
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    border-bottom: 4px solid #c9a227; /* gold accent line */
+}
+
+/* Top publication name */
+.masthead-top {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+/* small series label */
+.masthead-sub {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+/* main title */
+.masthead-title {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #52c161;
+}
+
+/* subtitle / story name */
+.masthead-tagline {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-top: 5px;
+    font-style: italic;
+    color: #167822; /* gold accent for emphasis */
+}
+
+/* MAIN HEADLINE (SERIF REQUIRED) */
+#headline {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* BYLINE */
+#byline {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* BODY TEXT */
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SUBHEADINGS */
+h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/* PULLQUOTE (REQUIRED STYLING DIFFERENCE) */
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    border-left: 5px solid black;
+    padding-left: 15px;
+    margin: 25px 0;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* CAPTIONS */
+.caption {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* CSS COMMENT (REQUIRED) */
+/* Styles for midterm editorial layout including typography, images, and banner design */
