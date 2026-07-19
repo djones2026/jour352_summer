@@ -1,0 +1,350 @@
+/* =========================================================
+   Deja Jones — Résumé
+   Custom styles (loaded after Bootstrap core)
+   ========================================================= */
+
+:root {
+  --ink: #1c1c1c;
+  --paper: #fbf8f2;
+  --paper-alt: #f1ece1;
+  --navy: #1f3a5c;
+  --navy-deep: #16293f;
+  --red: #b3312c;
+  --gold: #c98a2c;
+  --byline-gray: #6f6a60;
+  --rule: #ddd6c7;
+
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--paper);
+  padding-top: 64px; /* clears fixed nav */
+}
+
+.container {
+  max-width: 1080px;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  background-color: var(--navy-deep);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.site-nav__brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper) !important;
+}
+
+.site-nav__list .nav-link {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(251, 248, 242, 0.75) !important;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.15s ease;
+}
+
+.site-nav__list .nav-link:hover,
+.site-nav__list .nav-link:focus {
+  color: var(--gold) !important;
+  text-decoration: none;
+}
+
+.nav-link--cta {
+  border: 1px solid var(--red);
+  border-radius: 2px;
+  color: var(--paper) !important;
+}
+
+.nav-link--cta:hover {
+  background-color: var(--red);
+  color: var(--paper) !important;
+}
+
+/* ---------- Masthead / Page Topper ---------- */
+.masthead {
+  background: linear-gradient(160deg, var(--paper) 55%, #eee4d3 100%);
+  border-bottom: 4px solid var(--navy);
+  padding: 5.5rem 0 1.75rem;
+}
+
+.masthead__eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.masthead__name {
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  color: var(--navy);
+}
+
+.masthead__tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  margin-top: 0.5rem;
+}
+
+.masthead__divider {
+  color: var(--red);
+}
+
+.masthead__meta-row {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.masthead__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin: 0;
+}
+
+.masthead__meta a {
+  font-size: 0.9rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.masthead__meta a:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
+/* ---------- Sections (shared) ---------- */
+.section {
+  padding: 4rem 0;
+}
+
+.section--alt {
+  background-color: var(--paper-alt);
+}
+
+.section__heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+  margin-bottom: 2.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--red);
+  display: inline-block;
+}
+
+
+/* ---------- image ---------- */
+.profile-photo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+/* ---------- Experience / Education entries ---------- */
+.entry {
+  padding: 1.25rem 0;
+  align-items: stretch;
+}
+
+.entry__date {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background-color: var(--navy);
+  border-radius: 3px;
+  padding: 0.35rem 0.75rem;
+  display: inline-block;
+  height: fit-content;
+  margin-bottom: 0.75rem;
+}
+
+.entry__body {
+  background-color: #ffffff;
+  border-left: 4px solid var(--red);
+  border-radius: 0 4px 4px 0;
+  padding: 1.1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(28, 28, 28, 0.06);
+}
+
+.section--alt .entry__body {
+  background-color: var(--paper);
+}
+
+.entry__role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.entry__org {
+  font-size: 0.95rem;
+  color: var(--red);
+  font-weight: 600;
+  margin: 0.15rem 0 0.6rem;
+}
+
+.entry__desc {
+  font-size: 0.97rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- Skills ---------- */
+.skills-row {
+  row-gap: 1.75rem;
+}
+
+.skill-group {
+  background-color: #ffffff;
+  border-top: 4px solid var(--navy);
+  border-radius: 4px;
+  padding: 1.5rem 1.5rem 1rem;
+  box-shadow: 0 2px 6px rgba(28, 28, 28, 0.06);
+  height: 100%;
+}
+
+.skill-group:nth-child(2) {
+  border-top-color: var(--red);
+}
+
+.skill-group:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.skill-group__title {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.skill-group:nth-child(2) .skill-group__title {
+  color: var(--red);
+}
+
+.skill-group:nth-child(3) .skill-group__title {
+  color: var(--gold);
+}
+
+.skill-group__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-group__list li {
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.skill-group__list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: var(--navy-deep);
+  color: var(--paper);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.site-footer__name {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.site-footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.site-footer__links a {
+  color: rgba(251, 248, 242, 0.85);
+  font-size: 0.85rem;
+}
+
+.site-footer__links a:hover {
+  color: var(--gold);
+}
+
+/* ---------- Breakpoint refinements ---------- */
+@media (min-width: 768px) {
+  .entry__date {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .masthead {
+    padding: 4.5rem 0 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .entry__body {
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .masthead__meta {
+    gap: 0.4rem 1rem;
+  }
+}
+
